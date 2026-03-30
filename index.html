@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanishsree V P | Frontend Developer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Animations CSS -->
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top shadow-sm py-3" style="z-index: 9999;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero">Portfolio.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center min-vh-100 position-relative pb-5 mt-5 mt-md-0 hero-animated">
+        <!-- Animated background blobs -->
+        <div class="hero-blob blob-1"></div>
+        <div class="hero-blob blob-2"></div>
+        <div class="hero-blob blob-3"></div>
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+        <div class="container text-center text-md-start position-relative" style="z-index:2">
+            <div class="row align-items-center mt-5 mt-md-0">
+                <div class="col-md-6 order-2 order-md-1 mt-5 mt-md-0 reveal-left">
+                    <h6 class="text-primary fw-bold text-uppercase mb-3 tracking-wide">Hello, Welcome 👋</h6>
+                    <h1 class="display-3 fw-bold mb-3 hero-title"><span class="text-gradient animated-gradient">Avanishsree V P,</span><br>Frontend Developer</h1>
+                    <p class="lead text-muted mb-4 typewriter-text">Currently building modern, responsive, and user-centric web applications as a Frontend Developer at Ausdauer Groups.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+                        <a href="#projects" class="btn btn-primary rounded-pill px-4 py-3 shadow hover-rise btn-glow">View Projects</a>
+                        <a href="#contact" class="btn btn-outline-dark rounded-pill px-4 py-3 hover-rise">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2 text-center mb-5 mb-md-0 reveal-right">
+                    <div class="hero-image-container mx-auto">
+                        <div class="hero-ring"></div>
+                        <img src="profile_img.jpg" alt="Avanishsree V P" class="img-fluid hero-img shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 about-section position-relative overflow-hidden">
+        <div class="about-bg-blobs"></div>
+        <div class="about-orb about-orb-1"></div>
+        <div class="about-orb about-orb-2"></div>
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold display-6">About Me</h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="about_img.png" alt="About Me" class="img-fluid rounded-4 shadow hover-rise">
+                </div>
+                <div class="col-lg-7 ps-lg-5">
+                    <h3 class="fw-bold mb-3">Passionate Frontend Developer</h3>
+                    <p class="text-muted mb-4">I'm a dedicated web developer with a strong focus on creating clean, elegant, and highly functional user interfaces. My journey in tech started with a curiosity for how things work on the internet, which quickly evolved into a passion for building them.</p>
+                    <p class="text-muted mb-4">I love turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding, I'm constantly learning new technologies and exploring new design trends.</p>
+                    <div class="row text-center mt-4">
+                        <div class="col-6">
+                            <h3 class="fw-bold text-primary">20+</h3>
+                            <p class="text-muted small text-uppercase">Projects</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="fw-bold text-primary">100%</h3>
+                            <p class="text-muted small text-uppercase">Dedication</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 skills-section position-relative overflow-hidden">
+        <div class="skills-bubbles" id="skillsBubbles"></div>
+        <div class="skills-orb-bg"></div>
+        <div class="container py-5 position-relative" style="z-index:2">
+            <div class="section-title text-center mb-5 anim-up">
+                <h2 class="fw-bold display-6">My Skills</h2>
+                <div class="underline mx-auto"></div>
+                <p class="text-muted mt-3">Technologies and tools I work with</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Skill cards -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card text-center p-4 rounded-4 shadow-sm h-100">
+                        <i class="fab fa-html5 text-orange fa-3x mb-3"></i>
+                        <h5 class="fw-semibold">HTML5</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card text-center p-4 rounded-4 shadow-sm h-100">
+                        <i class="fab fa-css3-alt text-blue fa-3x mb-3"></i>
+                        <h5 class="fw-semibold">CSS3</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card text-center p-4 rounded-4 shadow-sm h-100">
+                        <i class="fab fa-js text-yellow fa-3x mb-3"></i>
+                        <h5 class="fw-semibold">JavaScript</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card text-center p-4 rounded-4 shadow-sm h-100">
+                        <i class="fab fa-react text-info fa-3x mb-3"></i>
+                        <h5 class="fw-semibold">React</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card text-center p-4 rounded-4 shadow-sm h-100">
+                        <i class="fab fa-bootstrap text-purple fa-3x mb-3"></i>
+                        <h5 class="fw-semibold">Bootstrap</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card text-center p-4 rounded-4 shadow-sm h-100">
+                        <i class="fab fa-github text-light fa-3x mb-3"></i>
+                        <h5 class="fw-semibold">GitHub</h5>
+                    </div>
+                </div>
+                <!-- New Skills -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card text-center p-4 rounded-4 shadow-sm h-100">
+                        <i class="fas fa-code text-blue fa-3x mb-3"></i>
+                        <h5 class="fw-semibold">C</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card text-center p-4 rounded-4 shadow-sm h-100">
+                        <i class="fas fa-laptop-code text-info fa-3x mb-3"></i>
+                        <h5 class="fw-semibold">C++</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card text-center p-4 rounded-4 shadow-sm h-100">
+                        <i class="fab fa-python text-yellow fa-3x mb-3"></i>
+                        <h5 class="fw-semibold">Python</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card text-center p-4 rounded-4 shadow-sm h-100">
+                        <i class="fab fa-java text-orange fa-3x mb-3"></i>
+                        <h5 class="fw-semibold">Java</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 projects-section position-relative overflow-hidden">
+        <div class="proj-bg-grid"></div>
+        <div class="proj-rotate-shape shape-1"></div>
+        <div class="proj-rotate-shape shape-2"></div>
+        <div class="proj-orb proj-orb-1"></div>
+        <div class="proj-orb proj-orb-2"></div>
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold display-6">Featured Projects</h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="row g-4 d-flex align-items-stretch">
+                <!-- Project 1 - Stranger Things -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="project-img-wrapper">
+                            <img src="img_stranger_things.png" class="card-img-top" alt="Journey in Stranger Things">
+                            <div class="project-overlay d-flex align-items-center justify-content-center gap-3">
+                                <a href="https://avanishsree27.github.io/strangers-things/" target="_blank" class="btn btn-light rounded-circle icon-btn shadow" title="Live Demo"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/avanishsree27/strangers-things" target="_blank" class="btn btn-light rounded-circle icon-btn shadow" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold">Journey in Stranger Things</h5>
+                            <p class="card-text text-muted small flex-grow-1">An immersive, dark-themed fan website inspired by the Stranger Things universe, featuring eerie animations, cinematic layouts, and retro 80s aesthetics.</p>
+                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                <span class="badge bg-secondary-subtle text-secondary px-3 py-2 rounded-pill">HTML</span>
+                                <span class="badge bg-secondary-subtle text-secondary px-3 py-2 rounded-pill">CSS</span>
+                                <span class="badge bg-secondary-subtle text-secondary px-3 py-2 rounded-pill">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 - Marvel Avengers -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="project-img-wrapper">
+                            <img src="img_avengers.png" class="card-img-top" alt="Marvel Avengers">
+                            <div class="project-overlay d-flex align-items-center justify-content-center gap-3">
+                                <a href="https://avanishsree27.github.io/avengers-/" target="_blank" class="btn btn-light rounded-circle icon-btn shadow" title="Live Demo"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/avanishsree27/avengers-" target="_blank" class="btn btn-light rounded-circle icon-btn shadow" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold">Marvel Avengers</h5>
+                            <p class="card-text text-muted small flex-grow-1">A bold, action-packed Marvel Avengers fan page showcasing superhero profiles with dynamic visual design, hero cards, and cinematic effects.</p>
+                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                <span class="badge bg-secondary-subtle text-secondary px-3 py-2 rounded-pill">HTML</span>
+                                <span class="badge bg-secondary-subtle text-secondary px-3 py-2 rounded-pill">CSS</span>
+                                <span class="badge bg-secondary-subtle text-secondary px-3 py-2 rounded-pill">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 - Organ Donation -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="project-img-wrapper">
+                            <img src="img_organ_donation.png" class="card-img-top" alt="Organ Donation Form">
+                            <div class="project-overlay d-flex align-items-center justify-content-center gap-3">
+                                <a href="https://avanishsree27.github.io/organ-donation-demo-website/" target="_blank" class="btn btn-light rounded-circle icon-btn shadow" title="Live Demo"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/avanishsree27/organ-donation-demo-website" target="_blank" class="btn btn-light rounded-circle icon-btn shadow" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold">Organ Donation Form</h5>
+                            <p class="card-text text-muted small flex-grow-1">A compassionate and accessible awareness website with a registration form for organ donation, built with a clean UI and a warm, welcoming design.</p>
+                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                <span class="badge bg-secondary-subtle text-secondary px-3 py-2 rounded-pill">HTML</span>
+                                <span class="badge bg-secondary-subtle text-secondary px-3 py-2 rounded-pill">CSS</span>
+                                <span class="badge bg-secondary-subtle text-secondary px-3 py-2 rounded-pill">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Achievements -->
+    <section id="experience" class="py-5 experience-section position-relative overflow-hidden">
+        <!-- Animated background -->
+        <div class="exp-bg-grid"></div>
+        <div class="exp-stars" id="expStars"></div>
+        <div class="exp-orb exp-orb-1"></div>
+        <div class="exp-orb exp-orb-2"></div>
+        <div class="exp-glow-line"></div>
+        <div class="container py-5 position-relative" style="z-index:2">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="section-title mb-5">
+                        <h2 class="fw-bold display-6">My Journey</h2>
+                        <div class="underline mx-auto"></div>
+                    </div>
+                    <div class="journey-map" id="experience-timeline">
+                        <div class="timeline-item position-relative pb-4">
+                            <div class="timeline-dot position-absolute bg-primary rounded-circle"></div>
+                            <h5 class="fw-bold mb-1">Frontend Developer</h5>
+                            <p class="text-primary small fw-semibold mb-2">Ausdauer Groups · Present</p>
+                            <p class="text-muted small">Building responsive and interactive web interfaces using modern frontend technologies, optimizing user experiences, and integrating web services.</p>
+                        </div>
+                        <div class="timeline-item position-relative pb-4">
+                            <div class="timeline-dot position-absolute bg-primary rounded-circle"></div>
+                            <h5 class="fw-bold mb-1">Internshala Student Partner (ISP)</h5>
+                            <p class="text-primary small fw-semibold mb-2">Internshala · Jan 2026 – Feb 2026 · Remote</p>
+                            <p class="text-muted small">Promoted internship and training opportunities on campus. Led awareness activities as a student representative and built communication and leadership skills through outreach.</p>
+                        </div>
+                        <div class="timeline-item position-relative pb-4">
+                            <div class="timeline-dot position-absolute bg-primary rounded-circle"></div>
+                            <h5 class="fw-bold mb-1">Internshala Student Partner (ISP)</h5>
+                            <p class="text-primary small fw-semibold mb-2">Internshala · Nov 2025 – Jan 2026 · Remote</p>
+                            <p class="text-muted small">Promoted internship and training opportunities on campus. Led awareness activities as a student representative and built communication and leadership skills through outreach.</p>
+                        </div>
+                        <div class="timeline-item position-relative pb-4">
+                            <div class="timeline-dot position-absolute bg-primary rounded-circle"></div>
+                            <h5 class="fw-bold mb-1">Frontend Developer Intern</h5>
+                            <p class="text-primary small fw-semibold mb-2">Alfido Tech · Dec 2025 – Jan 2026 · Remote</p>
+                            <p class="text-muted small">Worked on a task-based learning model involving real-world frontend projects. Built responsive UIs, improved UX, and enhanced problem-solving using HTML, CSS, and JavaScript.</p>
+                        </div>
+                        <div class="timeline-item position-relative pb-4 extra-exp d-none">
+                            <div class="timeline-dot position-absolute bg-primary rounded-circle"></div>
+                            <h5 class="fw-bold mb-1">Frontend Development Intern</h5>
+                            <p class="text-primary small fw-semibold mb-2">CodeAlpha · Nov 2025 – Dec 2025 · Remote</p>
+                            <p class="text-muted small">Worked on three hands-on web development tasks using HTML, CSS, and JavaScript, focusing on responsive design, clean UI, and real-world project implementation.</p>
+                        </div>
+                        <div class="timeline-item position-relative pb-4 extra-exp d-none">
+                            <div class="timeline-dot position-absolute bg-primary rounded-circle"></div>
+                            <h5 class="fw-bold mb-1">Web Development Intern</h5>
+                            <p class="text-primary small fw-semibold mb-2">CodSoft · Nov 2025 – Dec 2025 · Remote</p>
+                            <p class="text-muted small">Worked on hands-on web development projects using HTML &amp; CSS, focusing on responsive layouts, clean UI design, and real-world application development.</p>
+                        </div>
+                        <div class="timeline-item position-relative pb-4 extra-exp d-none">
+                            <div class="timeline-dot position-absolute bg-primary rounded-circle"></div>
+                            <h5 class="fw-bold mb-1">Frontend Developer Intern</h5>
+                            <p class="text-primary small fw-semibold mb-2">Cognifyz Technologies · Nov 2025 – Dec 2025 · Remote</p>
+                            <p class="text-muted small">Worked on front-end web development projects focusing on responsive layouts, clean UI design, and interactive user experiences using HTML, CSS, and JavaScript.</p>
+                        </div>
+                        <div class="timeline-item position-relative pb-4 extra-exp d-none">
+                            <div class="timeline-dot position-absolute bg-primary rounded-circle"></div>
+                            <h5 class="fw-bold mb-1">Web Development &amp; Design Intern</h5>
+                            <p class="text-primary small fw-semibold mb-2">Oasis Infobyte · Oct 2025 – Nov 2025 · Remote</p>
+                            <p class="text-muted small">Built responsive and visually appealing web pages using HTML5 and CSS3. Strengthened understanding of front-end layout structures and styling principles.</p>
+                        </div>
+                        <div class="timeline-item position-relative pb-4 extra-exp d-none">
+                            <div class="timeline-dot position-absolute bg-primary rounded-circle"></div>
+                            <h5 class="fw-bold mb-1">Virtual Intern</h5>
+                            <p class="text-primary small fw-semibold mb-2">Info Bharat Interns · Oct 2025 – Nov 2025 · Remote</p>
+                            <p class="text-muted small">Designed an interactive hotel menu card using HTML, strengthening front-end skills in structuring web pages and creating clean, user-friendly designs with semantic HTML.</p>
+                        </div>
+                        <div class="timeline-item position-relative extra-exp d-none">
+                            <div class="timeline-dot position-absolute bg-primary rounded-circle"></div>
+                            <h5 class="fw-bold mb-1">Q&amp;A Answerer / Content Writing Intern</h5>
+                            <p class="text-primary small fw-semibold mb-2">Careers360 · Jun 2025 – Jul 2025 · Remote</p>
+                            <p class="text-muted small">Contributed to educational content, article writing, and SEO-based academic materials. Improved research, editing, and writing skills for a large national audience.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="mt-5">
+                        <button id="toggleExpBtn" class="btn btn-outline-primary btn-lg rounded-pill px-5 py-3 hover-rise" onclick="toggleExperience()">
+                            Show More Journey <i class="fas fa-route ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5 position-relative overflow-hidden" style="background:#0f1208;">
+        <div class="container py-5 position-relative" style="z-index:2">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="fw-bold display-6 text-white section-glow-title">Certifications</h2>
+                        <div class="underline mx-auto"></div>
+                        <p class="text-muted small mt-3">Click a card to flip &amp; view certificate</p>
+                    </div>
+
+                    <!-- Cert Carousel Wrapper -->
+                    <div class="cert-carousel-wrapper position-relative">
+                        <div class="cert-carousel" id="certCarousel">
+
+                            <!-- freeCodeCamp -->
+                            <div class="cert-flip-card" onclick="this.classList.toggle('flipped')">
+                                <div class="cert-flip-inner">
+                                    <!-- FRONT -->
+                                    <div class="cert-flip-front" style="--cert-color:#0a0a23; --cert-accent:#00ea64;">
+                                        <div class="cert-sparkles"></div>
+                                        <div class="cert-icon-wrapper">
+                                            <i class="fas fa-code fa-2x"></i>
+                                        </div>
+                                        <span class="cert-issuer-badge">freeCodeCamp</span>
+                                        <h5 class="cert-title">Responsive Web Design</h5>
+                                        <p class="cert-date"><i class="fas fa-calendar-alt me-1"></i>Dec 2025</p>
+                                        <p class="cert-id"><i class="fas fa-id-badge me-1"></i>avanishsree_vp_27-rwdv9</p>
+                                        <div class="cert-flip-hint"><i class="fas fa-sync-alt me-1"></i>Click to view</div>
+                                    </div>
+                                    <!-- BACK -->
+                                    <div class="cert-flip-back">
+                                        <img src="cert_freecodecamp.png" alt="freeCodeCamp Certificate" class="cert-back-img">
+                                        <div class="cert-back-actions">
+                                            <a href="https://freecodecamp.org/certification/avanishsree_vp_27/responsive-web-design-v9" target="_blank" class="btn btn-sm btn-primary rounded-pill px-3">
+                                                <i class="fas fa-external-link-alt me-1"></i>Verify
+                                            </a>
+                                            <button class="btn btn-sm btn-outline-light rounded-pill px-3" onclick="event.stopPropagation(); this.closest('.cert-flip-card').classList.remove('flipped')">
+                                                <i class="fas fa-times me-1"></i>Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Meta -->
+                            <div class="cert-flip-card" onclick="this.classList.toggle('flipped')">
+                                <div class="cert-flip-inner">
+                                    <div class="cert-flip-front" style="--cert-color:#556b2f; --cert-accent:#ffffff;">
+                                        <div class="cert-sparkles"></div>
+                                        <div class="cert-icon-wrapper">
+                                            <i class="fas fa-laptop-code fa-2x"></i>
+                                        </div>
+                                        <span class="cert-issuer-badge">Meta × Coursera</span>
+                                        <h5 class="cert-title">Intro to Front-End Development</h5>
+                                        <p class="cert-date"><i class="fas fa-calendar-alt me-1"></i>Mar 2026</p>
+                                        <p class="cert-id"><i class="fas fa-id-badge me-1"></i>ABBXDGN81G5S</p>
+                                        <div class="cert-flip-hint"><i class="fas fa-sync-alt me-1"></i>Click to view</div>
+                                    </div>
+                                    <div class="cert-flip-back">
+                                        <img src="cert_meta.png" alt="Meta Certificate" class="cert-back-img">
+                                        <div class="cert-back-actions">
+                                            <a href="https://coursera.org/verify/ABBXDGN81G5S" target="_blank" class="btn btn-sm btn-primary rounded-pill px-3">
+                                                <i class="fas fa-external-link-alt me-1"></i>Verify
+                                            </a>
+                                            <button class="btn btn-sm btn-outline-light rounded-pill px-3" onclick="event.stopPropagation(); this.closest('.cert-flip-card').classList.remove('flipped')">
+                                                <i class="fas fa-times me-1"></i>Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Google -->
+                            <div class="cert-flip-card" onclick="this.classList.toggle('flipped')">
+                                <div class="cert-flip-inner">
+                                    <div class="cert-flip-front" style="--cert-color:#689f38; --cert-accent:#fdf6e3;">
+                                        <div class="cert-sparkles"></div>
+                                        <div class="cert-icon-wrapper">
+                                            <i class="fas fa-brain fa-2x"></i>
+                                        </div>
+                                        <span class="cert-issuer-badge">Google for Education</span>
+                                        <h5 class="cert-title">Gemini Certification (K12)</h5>
+                                        <p class="cert-date"><i class="fas fa-calendar-alt me-1"></i>Dec 2025 · Valid till 2028</p>
+                                        <p class="cert-id"><i class="fas fa-star me-1"></i>Grade: 80% · AI in Education</p>
+                                        <div class="cert-flip-hint"><i class="fas fa-sync-alt me-1"></i>Click to view</div>
+                                    </div>
+                                    <div class="cert-flip-back">
+                                        <img src="cert_google.png" alt="Google Certificate" class="cert-back-img">
+                                        <div class="cert-back-actions">
+                                            <button class="btn btn-sm btn-outline-light rounded-pill px-3" onclick="event.stopPropagation(); this.closest('.cert-flip-card').classList.remove('flipped')">
+                                                <i class="fas fa-times me-1"></i>Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TCS iON -->
+                            <div class="cert-flip-card" onclick="this.classList.toggle('flipped')">
+                                <div class="cert-flip-inner">
+                                    <div class="cert-flip-front" style="--cert-color:#1b5e20; --cert-accent:#d4e157;">
+                                        <div class="cert-sparkles"></div>
+                                        <div class="cert-icon-wrapper">
+                                            <i class="fas fa-briefcase fa-2x"></i>
+                                        </div>
+                                        <span class="cert-issuer-badge">TCS iON</span>
+                                        <h5 class="cert-title">Career Edge – Young Professional</h5>
+                                        <p class="cert-date"><i class="fas fa-calendar-alt me-1"></i>Aug 2025</p>
+                                        <p class="cert-id"><i class="fas fa-id-badge me-1"></i>240640-28501879-1016</p>
+                                        <div class="cert-flip-hint"><i class="fas fa-sync-alt me-1"></i>Click to view</div>
+                                    </div>
+                                    <div class="cert-flip-back">
+                                        <img src="cert_tcs.png" alt="TCS Certificate" class="cert-back-img">
+                                        <div class="cert-back-actions">
+                                            <button class="btn btn-sm btn-outline-light rounded-pill px-3" onclick="event.stopPropagation(); this.closest('.cert-flip-card').classList.remove('flipped')">
+                                                <i class="fas fa-times me-1"></i>Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /.cert-carousel -->
+
+                        <!-- Carousel Navigation Dots -->
+                        <div class="cert-dots mt-4" id="certDots"></div>
+                    </div><!-- /.cert-carousel-wrapper -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 edu-section position-relative overflow-hidden">
+        <div class="edu-bg-dots"></div>
+        <div class="edu-floating-icons">
+            <i class="fas fa-graduation-cap edu-icon-float"></i>
+            <i class="fas fa-book edu-icon-float"></i>
+            <i class="fas fa-award edu-icon-float"></i>
+            <i class="fas fa-lightbulb edu-icon-float"></i>
+        </div>
+        <div class="edu-orb edu-orb-1"></div>
+        <div class="edu-orb edu-orb-2"></div>
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold display-6">Education</h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="edu-card d-flex align-items-start p-4 p-md-5 rounded-4 shadow-sm bg-white border border-light hover-rise">
+                        <div class="edu-icon-box bg-primary text-white rounded-3 p-3 me-4 d-flex align-items-center justify-content-center flex-shrink-0">
+                            <i class="fas fa-graduation-cap fa-2x"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h4 class="fw-bold mb-1">R.M.K Engineering College</h4>
+                            <p class="text-primary fw-semibold mb-1">Bachelor of Engineering (BE)</p>
+                            <p class="text-muted small mb-2">Electrical, Electronics and Communications Engineering</p>
+                            <div class="d-flex flex-wrap gap-3 mt-3">
+                                <span class="d-flex align-items-center gap-2 text-muted small">
+                                    <i class="fas fa-calendar-alt text-primary"></i>
+                                    Aug 2025 – 2029
+                                </span>
+                                <span class="d-flex align-items-center gap-2 text-muted small">
+                                    <i class="fas fa-star text-primary"></i>
+                                    Grade: 8.23 (1st Semester)
+                                </span>
+                                <span class="d-flex align-items-center gap-2 text-muted small">
+                                    <i class="fas fa-users text-primary"></i>
+                                    Technical Club
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white position-relative overflow-hidden">
+        <div class="container py-5 position-relative z-1">
+            <div class="section-title text-center mb-5 text-white">
+                <h2 class="fw-bold display-6">Get In Touch</h2>
+                <div class="underline mx-auto bg-primary"></div>
+                <p class="text-light-50 mt-3">Want to work together or have any questions?</p>
+            </div>
+
+            <!-- Coding Profiles -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 text-center">
+                    <p class="text-light-50 small text-uppercase mb-4 fw-semibold letter-spacing">Find me on</p>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mx-auto" style="max-width:700px;">
+                        <a href="https://www.linkedin.com/in/avanishsree-vp-910144366/" target="_blank" class="profile-badge d-flex align-items-center gap-2 px-4 py-2 rounded-pill text-white fw-semibold" style="background:#0077b5;">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/avanishsree27" target="_blank" class="profile-badge d-flex align-items-center gap-2 px-4 py-2 rounded-pill text-white fw-semibold" style="background:#24292e;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.hackerrank.com/profile/Avanishsree" target="_blank" class="profile-badge d-flex align-items-center gap-2 px-4 py-2 rounded-pill fw-semibold" style="background:#00ea64;color:#000;">
+                            <i class="fas fa-code"></i> HackerRank
+                        </a>
+                        <a href="https://www.codechef.com/users/avanishsree_27" target="_blank" class="profile-badge d-flex align-items-center gap-2 px-4 py-2 rounded-pill text-white fw-semibold" style="background:#5b4638;">
+                            <i class="fas fa-utensils"></i> CodeChef
+                        </a>
+                        <a href="https://www.skillrack.com/faces/resume.xhtml?id=549523&key=6ca22c44c69ee4219b186613eb789ade15b88522" target="_blank" class="profile-badge d-flex align-items-center gap-2 px-4 py-2 rounded-pill text-white fw-semibold" style="background:#e84545;">
+                            <i class="fas fa-laptop-code"></i> SkillRack
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card bg-white-10 backdrop-blur border-0 rounded-4 p-4 p-md-5">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control form-control-lg bg-transparent border-secondary text-white custom-input" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control form-control-lg bg-transparent border-secondary text-white custom-input" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control form-control-lg bg-transparent border-secondary text-white custom-input" placeholder="Subject">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control form-control-lg bg-transparent border-secondary text-white custom-input" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="button" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-lg hover-rise">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative bg -->
+        <div class="bg-shape position-absolute rounded-circle bg-primary opacity-25 blur-xl"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black text-white text-center">
+        <div class="container">
+            <p class="fw-bold fs-5 mb-1">Avanishsree V P</p>
+            <p class="text-secondary small mb-4">Frontend Developer · Ausdauer Groups</p>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="https://github.com/avanishsree27" target="_blank" class="social-icon text-white" title="GitHub"><i class="fab fa-github fa-xl"></i></a>
+                <a href="https://www.linkedin.com/in/avanishsree-vp-910144366/" target="_blank" class="social-icon text-white" title="LinkedIn"><i class="fab fa-linkedin fa-xl"></i></a>
+                <a href="https://www.hackerrank.com/profile/Avanishsree" target="_blank" class="social-icon text-white" title="HackerRank"><i class="fas fa-code fa-xl"></i></a>
+                <a href="https://www.codechef.com/users/avanishsree_27" target="_blank" class="social-icon text-white" title="CodeChef"><i class="fas fa-utensils fa-xl"></i></a>
+                <a href="https://www.skillrack.com/faces/resume.xhtml?id=549523&key=6ca22c44c69ee4219b186613eb789ade15b88522" target="_blank" class="social-icon text-white" title="SkillRack"><i class="fas fa-laptop-code fa-xl"></i></a>
+            </div>
+            <p class="mb-0 text-secondary small">&copy; 2026 Avanishsree V P. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Lightbox Modal -->
+    <div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <h6 class="modal-title fw-bold" id="certModalLabel">Certificate</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center p-3 p-md-4">
+                    <img id="certModalImg" src="" alt="Certificate" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
